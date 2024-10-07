@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Net Cash Calculator</h1>
+    
+    <div class="section1">
+        <h2>Current Account Balances</h2>
+        <label class="bankLabel" for="">Bank 1</label>
+        <label class="bankLabel" for="">Bank 2</label>        
+        <label class="bankLabel" for="">Total</label> <br>
+        <input class="amt" id="bank1Balance" type="number" placeholder="0.00" >
+        <input class="amt" id="bank2Balance" type="number" placeholder="0.00" >
+        <input class="amt" id="bank3Balance" type="number" placeholder="0.00" >
+    </div>
+
+    
+    <span class="section2">
+        <h2>Pending Transactions</h2>
+        <label class="transLabel" for="number">Amount 1</label>
+        <label class="transLabel" for="number">Amount 2</label>       
+        <label class="transLabel" for="number">Amount 3</label> <br>
+        <input class="amt" id="transAmt1" type="number" placeholder="0.00">
+        <input class="amt" id="transAmt2" type="number" placeholder="0.00">       
+        <input class="amt" id="transAmt3" type="number" placeholder="0.00"> <br> <br>       
+        <label class="transLabel" for="number">Amount 4</label>       
+        <label class="transLabel" for="number">Amount 5</label>       
+        <label class="transLabel" for="number">Amount 6</label> <br>
+        <input class="amt" id="transAmt4" type="number" placeholder="0.00">       
+        <input class="amt" id="transAmt5" type="number" placeholder="0.00">       
+        <input class="amt" id="transAmt6" type="number" placeholder="0.00">       
+    </span> 
+        
+
+    <span class="section3">
+        <h2>Upcoming Bills</h2>
+        <label class="upcomingLabel" for="">Upcoming Bills Estimate</label>        
+        <label class="upcomingLabel" for="">Total Bills</label> <br>
+        <input class="amt" id="upcmgAmt" type="number" placeholder="0.00">
+        <input class="amt" id="totalUpcmgAmt" type="number" placeholder="0.00">
+    </span>
+        
+
+    <div class="section4"></div>
+        <h2>Remaining Cash</h2> 
+        <label class="netCashLabel" for="">Net Cash</label>
+        <output id="netCashDisplay" type="number"></output>       
+    </div>
+
+    <div>
+        <input id="netCashBtn" type="button" value="Calculate" onclick="calcNetCash()" >
+    </div>
+
+
+</body>
+<script src="main.js"></script>
+
+</html>

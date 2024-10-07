@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding-bottom: 10px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+body{
+    background-color: lightslategray;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+h1{
+    margin: 10px;
+}
+
+h2{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.section1{
+    border: 1px solid black;
+    border-radius: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+}
+
+.bankLabel{
+    margin-left: 5px;
+    width: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    font-size: 1.0em;
+    font-weight: bold;
+    /* border: 2px solid; */
+
+}
+
+.section2{
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 20px;    
+}
+
+.transLabel{
+    width: 150px;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 1.0em;
+    font-size: 1.0em;
+    font-weight: bold;
+}
+
+.section3{
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+}
+
+#netCashDisplay{
+    margin-top: 0px;
+    background-color: aliceblue;
+    width: 150px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+#netCashBtn{
+    margin-top: 10px;
+    padding-top: 8px;
+    border-radius: 8px;
+}
