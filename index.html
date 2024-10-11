@@ -13,10 +13,10 @@
         <h2>Current Account Balances</h2>
         <label class="bankLabel" for="">Bank 1</label>
         <label class="bankLabel" for="">Bank 2</label> <br>        
-        <input class="amt" id="bank1Balance" type="number" value="1.00" >
-        <input class="amt" id="bank2Balance" type="number" value="1.00" > <br>
+        <input class="amt" id="bank1Balance" type="number" placeholder="$0.00" >
+        <input class="amt" id="bank2Balance" type="number" placeholder="$0.00" > <br>
         <input id="bankBtn" type="button" value="Calculate" onclick="calcBankBal()" >
-        <div id="bankTotalDisplay" type="number" ></div>
+        <div id="bankTotalDisplay" type="number"></div>
     </div>
 
     
@@ -25,15 +25,15 @@
         <label class="transLabel" for="number">Amount 1</label>
         <label class="transLabel" for="number">Amount 2</label>       
         <label class="transLabel" for="number">Amount 3</label> <br>
-        <input class="amt" id="transAmt1" type="number" placeholder="0.00">
-        <input class="amt" id="transAmt2" type="number" placeholder="0.00">       
-        <input class="amt" id="transAmt3" type="number" placeholder="0.00"> <br> <br>       
+        <input class="amt" id="transAmt1" type="number" placeholder="$0.00">
+        <input class="amt" id="transAmt2" type="number" placeholder="$0.00">       
+        <input class="amt" id="transAmt3" type="number" placeholder="$0.00"> <br> <br>       
         <label class="transLabel" for="number">Amount 4</label>       
         <label class="transLabel" for="number">Amount 5</label>       
         <label class="transLabel" for="number">Amount 6</label> <br>
-        <input class="amt" id="transAmt4" type="number" placeholder="0.00">       
-        <input class="amt" id="transAmt5" type="number" placeholder="0.00">       
-        <input class="amt" id="transAmt6" type="number" placeholder="0.00"> <br>
+        <input class="amt" id="transAmt4" type="number" placeholder="$0.00">       
+        <input class="amt" id="transAmt5" type="number" placeholder="$0.00">       
+        <input class="amt" id="transAmt6" type="number" placeholder="$0.00"> <br>
         <input id="transBtn" type="button" value="Calculate" onclick="calcTransTotal()" > <br>
         <div id="transTotalDisplay" type="number" ></div><br> <br>
         <hr class="solid">
@@ -41,8 +41,8 @@
             <h2>Upcoming Bills</h2>
             <!-- <label class="upcomingLabel" for="">Upcoming Bills Estimate</label>         -->
             <label class="upcomingLabel" for="">Total Bills</label> <br>
-            <!-- <input class="amt" id="upcmgAmt" type="number" placeholder="0.00"> -->
-            <input  id="totalUpcmgAmt" type="number" placeholder="0.00">
+            <!-- <input class="amt" id="upcmgAmt" type="number" placeholder="$0.00"> -->
+            <input  id="totalUpcmgAmt" type="number" placeholder="$0.00">
         </div>
                
     </div> 
@@ -51,19 +51,20 @@
     <!-- <div class="section3">
         <h2>Upcoming Bills</h2>
         <label class="upcomingLabel" for="">Total Bills</label> <br>
-        <input class="amt" id="totalUpcmgAmt" type="number" placeholder="0.00">
+        <input class="amt" id="totalUpcmgAmt" type="number" placeholder="$0.00">
     </div> -->
         
 
     <div class="section4"></div>
         <h2>Remaining Cash</h2> 
         <label class="netCashLabel" for="">Net Cash</label>
-        <output id="netCashDisplay" type="number"></output>       
+        <output id="netCashDisplay" type="number"></output>
+        <div>
+            <input id="netCashBtn" type="button" value="Calculate" onclick="calcNetCash()" >
+        </div>       
     </div>
 
-    <div>
-        <input id="netCashBtn" type="button" value="Calculate" onclick="calcNetCash()" >
-    </div>
+    
 
 
 </body>
