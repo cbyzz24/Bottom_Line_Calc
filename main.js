@@ -5,7 +5,8 @@ function calcBankBal(){
     const bankDisplay = document.getElementById("bankTotalDisplay");
     let bank1amt = Number(bank1);
     let bank2amt = Number(bank2);
-    bankDisplay.textContent = bank1amt + bank2amt;
+    result = bank1amt + bank2amt;
+    bankDisplay.textContent = result.toLocaleString("en-US", {style: "currency", currency: "USD"});
 }
 
 function calcTransTotal(){
@@ -23,8 +24,8 @@ function calcTransTotal(){
     let tAmount4 = Number(transAmt4);
     let tAmount5 = Number(transAmt5);
     let tAmount6 = Number(transAmt6);
-
-    transTotalDisplay.textContent = tAmount1 + tAmount2 + tAmount3 + tAmount4 + tAmount5 + tAmount6;
+    result = tAmount1 + tAmount2 + tAmount3 + tAmount4 + tAmount5 + tAmount6;
+    transTotalDisplay.textContent = result.toLocaleString("en-US", {style: "currency", currency: "USD"});
 }
 
 
@@ -52,5 +53,6 @@ function calcNetCash(){
     const totalUpcmgAmt = document.getElementById("totalUpcmgAmt").value;
     const netCashDisplay = document.getElementById("netCashDisplay");
     let totalUcAmt = Number(totalUpcmgAmt);
-    netCashDisplay.textContent = (bank1amt + bank2amt) - (tAmount1 + tAmount2 + tAmount3 + tAmount4 + tAmount5 + tAmount6 + totalUcAmt);
+    result = (bank1amt + bank2amt) - (tAmount1 + tAmount2 + tAmount3 + tAmount4 + tAmount5 + tAmount6 + totalUcAmt);
+    netCashDisplay.textContent = result.toLocaleString("en-US", {style: "currency", currency: "USD"});
 }

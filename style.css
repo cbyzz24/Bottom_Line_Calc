@@ -5,8 +5,9 @@
 }
 
 body{
-    background-color: lightslategray;
-    display: flex;
+    /* background-color: lightslategray; */
+    background: rgb(119,136,153);
+    background: radial-gradient(circle, rgba(119,136,153,1) 31%, hsl(212, 28%, 40%) 88%);    display: flex;
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
@@ -71,6 +72,11 @@ h2{
     border-radius: 8px;
     background-color: hsla(203, 92%, 55%, 0.733);
     font-weight: bold;
+    cursor: pointer;
+}
+
+#bankBtn:hover{
+    background-color: hsla(203, 92%, 40%);
 }
 
 .section2{
@@ -112,6 +118,11 @@ h2{
     border-radius: 8px;
     background-color: hsla(203, 92%, 55%, 0.733);
     font-weight: bold;
+    cursor: pointer;
+}
+
+#transBtn:hover{
+    background-color: hsla(203, 92%, 40%);
 }
 
 hr.solid{
@@ -141,18 +152,23 @@ hr.solid{
 
 
 
-/* .section3{
+.section3{
     margin-top: 15px;
     border: 1px solid black;
     border-radius: 8px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 20px;
-} */
+    padding-top: 15px;
+}
+
+.netCashLabel{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
 
 #netCashDisplay{
-    margin: auto;
+    margin-top: 15px;
     padding-top: 5px;
+    padding-left: 55px;
+    padding-right: 55px;
     background-color: rgba(122, 245, 196, 0.726);
     width: 150px;
     height: 15px;
@@ -165,4 +181,9 @@ hr.solid{
     border-radius: 8px;
     background-color: hsla(203, 92%, 55%, 0.733);
     font-weight: bold;
+    cursor: pointer;
+}
+
+#netCashBtn:hover{
+    background-color: hsla(203, 92%, 40%);
 }
