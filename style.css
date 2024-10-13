@@ -66,6 +66,7 @@ h2{
     height: 12px;
     border-radius: 10px;
     padding-top: 5px;
+    font-weight: bold;
 }
 
 #bankBtn{
@@ -112,6 +113,7 @@ h2{
     height: 12px;
     border-radius: 10px;
     padding-top: 5px;
+    font-weight: bold;
 }
 
 
@@ -156,6 +158,7 @@ hr.solid{
     height: 12px;
     border-radius: 10px;
     padding-top: 5px;
+    font-weight: bold;
 }
 
 
@@ -175,11 +178,12 @@ hr.solid{
 #netCashDisplay{
     margin-top: 15px;
     padding-top: 10px;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 55px;
+    padding-right: 55px;
     /* background-color: rgba(122, 245, 196, 0.726); */
     /* background-color: #BFF6C3; */
     font-weight: bold;
+    font-size: 1.2em;
     background-color: hsl(91, 82%, 80%);
     width: 150px;
     height: 15px;

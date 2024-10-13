@@ -13,7 +13,7 @@
         <h2>Current Account Balances</h2>
         <label class="bankLabel" for="">Bank 1</label>
         <label class="bankLabel" for="">Bank 2</label> <br>        
-        <input class="amt" id="bank1Balance" type="number" placeholder="$0.00" >
+        <input class="amt" id="bank1Balance" type="number" placeholder="$0.00" autofocus >
         <input class="amt" id="bank2Balance" type="number" placeholder="$0.00" > <br>
         <input id="bankBtn" type="button" value="Calculate" onclick="calcBankBal()" >
         <div id="bankTotalDisplay" type="number"></div>
@@ -51,7 +51,7 @@
     <div class="section3">
         <h2>Remaining Cash</h2> 
         <!-- <label class="netCashLabel" for="">Net Cash</label> <br>  -->
-         <h4>Net Cash</h4>
+         <h4>Net Amount</h4> 
         <output id="netCashDisplay" type="number"></output> <br> <br>
         <input id="netCashBtn" type="button" value="Calculate" onclick="calcNetCash()" > <br>
               
